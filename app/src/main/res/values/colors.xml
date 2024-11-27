@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#858585</color>
+    <color name="gray50">#80858585</color>
+
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:color="#4CAF50" android:state_checked="true" /> <!-- 선택된 색상 -->
+        <item android:color="#808080" /> <!-- 기본 색상 -->
+    </selector>
+</resources>

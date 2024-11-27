@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="13dp"
+        android:layout_height="20dp"
+        android:background="@drawable/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="66dp"
+        android:layout_marginStart="25dp"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:src="@drawable/close"
+        android:contentDescription="Close"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="366dp"
+        android:layout_marginTop="70dp" />
+
+    <TextView
+        android:id="@+id/tvTypeSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원 정보"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="42dp"
+        android:layout_marginStart="22dp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/tvTypeSelection"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="20dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/txtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:textStyle="bold"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/tvTypeSelection"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingEnd="30dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/txtIdEx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="영문 소문자, 숫자 4~20"
+        android:textSize="12sp"
+        android:textColor="@color/gray" />
+
+
+    <EditText
+        android:id="@+id/etId"
+        android:layout_width="373dp"
+        android:layout_height="47dp"
+        android:hint="아이디"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"
+        android:paddingStart="15sp"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/txtId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/etId"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="20dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:textStyle="bold"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/etId"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingEnd="30dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/txtPasswordEx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="영문, 숫자, 특수문자 1종류 이상 조합된 8 ~20자"
+        android:textSize="12sp"
+        android:textColor="@color/gray" />
+
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="373dp"
+        android:layout_height="47dp"
+        android:hint="비밀번호"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"
+        android:paddingStart="15sp"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/txtPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etPassOk"
+        android:layout_width="373dp"
+        android:layout_height="47dp"
+        android:hint="비밀번호 확인"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"
+        android:paddingStart="15sp"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/etPass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/etPassOk"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="20dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="실명"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:textStyle="bold"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/etPassOk"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingEnd="30dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/txtNameEx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="실제 이름 기재"
+        android:textSize="12sp"
+        android:textColor="@color/gray" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="373dp"
+        android:layout_height="47dp"
+        android:hint="이름"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"
+        android:paddingStart="15sp"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/txtName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/etName"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="20dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/txtFName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="게시판 닉네임"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:textStyle="bold"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/etName"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingEnd="30dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/txtFNameEx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="게시판 활동에 필요"
+        android:textSize="12sp"
+        android:textColor="@color/gray" />
+
+    <EditText
+        android:id="@+id/etFName"
+        android:layout_width="373dp"
+        android:layout_height="47dp"
+        android:hint="게시판 닉네임"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"
+        android:paddingStart="15sp"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/txtFName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/etFName"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="20dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/txtClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="과목"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:textStyle="bold"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/etFName"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingEnd="30dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/txtClassEx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="담당 과목 기재"
+        android:textSize="12sp"
+        android:textColor="@color/gray" />
+
+    <EditText
+        android:id="@+id/etClass"
+        android:layout_width="373dp"
+        android:layout_height="47dp"
+        android:hint="과목"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"
+        android:paddingStart="15sp"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/txtClass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="375dp"
+        android:layout_height="55dp"
+        android:text="회원가입"
+        android:backgroundTint="#9ACD32"
+        android:textColor="#FFFFFF"
+        android:layout_margin="25dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/etClass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
